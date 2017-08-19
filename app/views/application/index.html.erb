@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToyApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="header">
+      <%= link_to "Home", :controller => "application", :actions => "index"%>
+      | <%= link_to "User", :controller => "users" %>
+      | <%= link_to "Microposts", microposts_path %>
+    </div>
+    <di>
+      <h1>My First Ruby On Rails Website!</h1>
+    </di>
+    <div>
+      Copyright @<%= Date.today.year %> by trong tran
+    </div>
+  </body>
+</html>
