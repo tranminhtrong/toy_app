@@ -1,6 +1,10 @@
  <%= stylesheet_link_tag "style" %>
+ <div id="header">
+      <%= link_to "Home", :controller => "application", :actions => "index"%>
+      | <%= link_to "User", :controller => "users" %>
+      | <%= link_to "Microposts", microposts_path %>
+    </div>
 <p id="notice"><%= notice %></p>
-
 <h1>Users</h1>
 
 <table class="rwd-table">
