@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   end
   
   def index
-  
+    render html: "hello, world!"
   end
 end
